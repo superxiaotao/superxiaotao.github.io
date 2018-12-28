@@ -20,28 +20,29 @@
        img{
            animation: img 1s linear forwards;
            /* border: 1px solid #000; */
+           position: absolute;
             display: block;
-            top:10%;
-            left: 27%;
-          
+            top:50%;
+            left: 50%;
+            width: 1%;
             transform: translateY(-50%) translateX(-50%);
-            
+            transform-origin:20% 90%; 
        }
        @keyframes img{
            from{
-             position: absolute;
+         
             
-             transform:  rotate(0deg)  ;
-             width: 5%;
-             transform-origin:20% 90%; 
+             transform:  rotate(0deg)  translateY(-50%) translateX(-50%);
+             width: 1%;
+             
 
            }
            to{
-            position: absolute;
+       
            
             width: 41%;
-            transform:  rotate(1080deg)  ;
-            transform-origin:left bottom; 
+            transform:  rotate(1080deg)   translateY(-50%) translateX(-50%);
+            
            }
        }
        
